@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function data() {
+            var name = document.getElementById("name").value;
+            var add = document.getElementById("address").value;
+            var ipadd = document.getElementById("ip").value;
+            var email = document.getElementById("email").value;
+            var number = document.getElementById("number").value;
+        }
+
+    </script>
+     <style>
+  body
+  {
+      display: block;
+      padding: 30px;
+      font-size: 30px;
+  }
+  #but
+  {
+      size: 20px;
+      font-size: 25px;
+  }
+  </style>
+</head>
+<body>
+<h2>{{ "Pleae Enter the following information" }}</h2>
+<form>
+  Full name:<br>
+  <input type="text"  id="name" name="firstname" value="">
+  <br>
+  Address:<br>
+  <input type="text" id="address" name="lastname" value="">
+    <br>
+  IP Address:<br>
+  <input type="text"  id="ip" name="firstname" value="">
+  <br>
+  Email:<br>
+  <input type="text"  id="email" name="firstname" value="">
+  <br>
+  Phone Number:<br>
+  <input type="text"  id="number" name="firstname" value="">
+  <br>
+
+</form>
+<a href="{% url 'fill_form.views.get_data' %}">Click here</a>
+
+</body>
+</html>
