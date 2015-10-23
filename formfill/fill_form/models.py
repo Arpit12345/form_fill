@@ -15,10 +15,3 @@ class fill(models.Model):
         return u"%s %s %d %s %d" % (self.full_name, self.Add, self.ipadd, self.email,self.phoneno)
 
 
-
-
-class show(models.Model):
-    t1 = models.CharField(max_length=200)
-
-
-

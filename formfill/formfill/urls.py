@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 import fill_form.views
 urlpatterns = [
-
-    url(r'^home/', include('fill_form.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^home/', include('fill_form.urls')),
+
 ]

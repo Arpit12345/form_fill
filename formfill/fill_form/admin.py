@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.contrib import admin
 
-from .models import show, fill
+from .models import fill
 
-
+from django.contrib import admin
 
 # Register your models here.
-admin.site.register(show)
+
 admin.site.register(fill)
